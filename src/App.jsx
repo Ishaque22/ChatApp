@@ -8,7 +8,7 @@ import { AuthContext } from "./context/AuthContext"
 
 
 function App() {
-  console.log(import.meta.env.VITE_REACT_APP_apiKey)
+  console.log(import.meta.env.VITE_REACT_APP_projectId)
   const {currentUser} =useContext(AuthContext)
 const ProtectedRoute =({children})=>{
   if(!currentUser){
